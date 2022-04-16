@@ -16,9 +16,10 @@
   background-color: #f2f2f2;
   display: flex;
   position: relative;
+  align-items: center;
   /* выше установили ограничения для секции */
 }
-.logo__place_header{
+.logo_place_header{
   position: absolute;
   top:30px;
   left:64px;
@@ -30,20 +31,17 @@
 
 .header__title{
   margin:0;
-  display:flex;
-  align-items: center;
   padding-left: 64px;
-  width: 730px;
+  max-width: 730px;
   font-size: 102px;
   line-height: 96px;
   font-weight: bold;
-
 }
 .header__subtitle{
   margin:0;
   position:absolute;
   width:388px;
-  height:55px;
+  min-height:55px;
   left: 64px;
   bottom: 30px;
   line-height: 25px;
@@ -51,9 +49,8 @@
   font-weight: normal;
 }
 
-.header_link{
+.header__link{
   text-decoration: none;
-  list-style: none;
   color: #2f80ed;
 }
 
@@ -62,6 +59,7 @@
   height: 608px;
   background-image: url(../images/header-image.png);
   background-size: cover;
+  background-repeat: no-repeat;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -139,7 +137,6 @@
 
 .section-subtitle{
   width: 60%;
-  margin:0;
   margin:auto;
   text-align: center;
   line-height: 34px;
@@ -148,7 +145,6 @@
 }
 
 .digits{
-  padding-top: 100px;
   padding-bottom: 100px;
 }
 
@@ -159,7 +155,6 @@
   margin: auto;
   display: flex;
   justify-content: space-between;
-  flex-direction: row;
   flex-wrap: wrap;
 }
 
@@ -248,26 +243,12 @@
   z-index: 1;
 }
 
-.kaufman__title{
-  color: white;
-  width: 60%;
-  margin:auto;
-  text-align: center;
-  line-height: 1.15;
-  font-size: 60px;
-  font-weight: bold;
-  padding-bottom: 20px;
+.section-title_theme_dark{
+  color: #fff;
 }
 
-.kaufman__subtitle{
-  color: white;
-  width: 60%;
-  margin:0;
-  margin:auto;
-  text-align: center;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
+.section-subtitle_theme_dark{
+  color: #fff;
 }
 
 .kaufman__triangle{
@@ -290,10 +271,8 @@
 }
 
 .footer__columns {
-  color: white;
-  margin: 0;
-  margin-left: auto;
-  margin-right: auto;
+  color: #fff;
+  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   padding-top: 60px;
@@ -330,17 +309,19 @@
 .footer__column-link {
   text-decoration: none;
   list-style: none;
-  color: white;
+  color: #fff;
   line-height: 30px;
   font-size: 18px;
 }
 .footer__column-link:last-child{
   margin-bottom: 20px;
 }
-
+.footer__social-icon{
+  padding-right: 10px;
+}
 .table__cell_theme_dark {
   width: 200px;
-  color: white;
+  color: #fff;
   margin-right: 0;
   margin-top: 80px;
   padding-top: 0;
